@@ -1,137 +1,299 @@
-body {
-	/*position*/
-	
-	
-	/*box-model*/
-	width: 960px;
-	margin: auto;
-
-
-	/*colors*/
-	background-image: url("../images/asanoha-400px.png");
-
-	/*text*/
-	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-
-	/*other*/
+html, body {
+    /*box-model*/
+    height: 100%; 
+    width: 960px;
+    margin: auto;
+    /*colors*/
+    
+    background-image: url("../images/asanoha-400px.png");
+    /*text*/
+    
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
+/*HEADER AND NAVAGATIONAL BAR*/
 
 header {
-	/*position*/
-	/*clear: none;*/
-
-
-	/*box-model*/
-	width: 100%;
-	height: 20px;
-
-	/*color*/
-	background-color: blue;
-
-	/*text*/
-
-	/*other*/
+    width: 100%;
+    height: 70px;
+    background-color: #ffffff;
 }
 
-nav {
-	/*position*/
-	/*position: relative;*/
+.nav-bar {
+    
+    width: 100%;
+    height: 70px;
+    border-bottom: 2px solid #cccccc;
+}
 
-	/*box-model*/
-	width: 100%;
-	height:200px;
-	/*clear: both;*/
+.nav-links {
+    float:right;
+    display: inline;
+    margin-top: 20px;
+    margin-right: 40px;
+}
 
-	/*color*/
-	background-color: red;
 
-	/*text*/
-	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+.nav-links a{
+    text-align: center;
+    border-right: 1px solid #ddd;
+    color: #ccc;
+    margin-right: 20px;
+    text-decoration: none;
 
-	/*other*/
+}
+
+.nav-links a:hover {
+    color: #46B771;
+
 }
 
 
 h1 {
-	/*position*/
-	/*position: absolute;*/
-	/*left: 0px;*/
-	
-
-	/*box-model*/
-	width: 100px;
-	height: 100px;
-	/*margin-left: 200px;*/
-
-	/*color*/
-	background-color: #4aaaa5;
-
-	/*text*/
-	
-
-	/*other*/
+    /*position*/
+    
+    float: left;
+    /*box-model*/
+    
+    width: 190px;
+    padding: 18px;
+    margin-left: 100px;
+    /*color*/
+    
+    background-color: #4aaaa5;
+    color: #ffffff;
+    /*text*/
+    
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
 
+/*MAIN CONTENT: ABOUT ME*/
 
+h2 {
+    /*box-model*/
+    
+    border-bottom: 2px solid #cccccc;
+    margin: 20px;
+    padding-bottom: 30px;
+    /*color*/
+    
+    color: #4681B7;
+    /*text*/
+    
+    font-weight: bold;
+    font-size: 35px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+.profile-picture {
+    /*position*/
+    
+    float: left;
+    /*box-model*/
+    
+    margin: 10px;
+    border: 5px solid #dddddd;
+}
+p {
+    /*position*/
+    
+    display: inline;
+    /*text*/
+    
+    line-height: 24px;
+    color: #666666;
+}
 .about-me {
-	/*position*/
-	float: left;
+    /*position*/
+    
+    float: left;
+    /*box model*/
+    
+    width: 610px;
+    /*lessened due to padding*/
+    
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    /*color*/
+    
+    background: #ffffff;
+}
+/*MAIN CONTENT: CONTACT ME FORM*/
 
-	/*box model*/
-	width: 650px;
-	height: 500px;
+form {
+    /*position*/
+    
+    float: left;
+    /*box model*/
+    
+    width: 610px;
+    /*reduced width due to padding*/
+    
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    /*color*/
+    
+    background-color: #ffffff;
+    color: #666666;
+    /*text*/
+    
+    font-size: 18px;
+}
+input {
+    /*box-model*/
+    
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #cccccc;
+    /*text*/
+    
+    font-size: 18px;
+}
+.message-form {
+    height: 100px;
+}
+.submit-form {
+    /*box-model*/
+    
+    width: 120px;
+    padding: 10px;
+    /*color*/
+    
+    background-color: #46B771;
+    color: #fff;
+    /*text*/
+    
+    font-size: 20px;
+}
+/*MAIN CONTENT: PORTFOLIO LINKS/IMAGES*/
 
-
-	/*color*/
-	background: white;
-
-	/*other*/
-		
-	}
+.portfolio {
+    float: left;
+    /*box model*/
+    
+    width: 610px;
+    /*reduced width due to padding*/
+    
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    /*color*/
+    
+    background-color: #ffffff;
+    color: #666666;
+}
+.portfolio div {
+    /*position*/
+    
+    float: left;
+    position: relative;
+    /*box model*/
+    
+    width: 50%;
+    margin-top: 20px;
+}
+.portfolio p {
+    /*postion*/
+    position: absolute;
+    left: 0;
+    bottom: 18px;
+    /*box-model*/
+    
+    width: 250px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #46B771;
+    text-align: center;
+    color: #fff;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+/*SIDE CONNECT BUTTONS*/
 
 .connect {
-	/*position*/
-	float: left;
+    /*position*/
+    
+    float: left;
+    /*box-model*/
+    
+    height: 150px;
+    width: 270px;
+    margin-top: 20px;
+    /*color*/
+    
+    background-color: #ffffff;
+}
+h3 {
+    /*box-model*/
+    
+    border-bottom: 2px solid #cccccc;
+    margin: 20px;
+    padding-bottom: 8px;
+    /*color*/
+    
+    color: #4AA7C1;
+    /*text*/
+    
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+.connect-icons {
+    /*box-model*/
+    
+    margin: auto;
+    /*text*/
+    
+    text-align: center;
+}
+.connect-with-me-icons {
+    /*box-model*/
+    
+    margin: auto;
+    width: 50px;
+    height: 50px;
+}
+/*STICKY FOOTER*/
 
-	/*box-model*/
-	height: 100px;
-	margin: 10px;
-	width: 100px;
+footer {
+    /*position*/
+    /*box-model*/
+    
+    clear: both;
+    width: 100%;
 
-	/*color*/
-	background-color: white;
-
-	/*text*/
-
-	/*other*/
-
+    padding-top: 40px;
+    border-top: solid 5px #4aaaa5;
+    /*color*/
+    
+    background: #666666;
+    /*text*/
+    
+    text-align: center;
+    font-size: 12px;
+    color: #ccc;
 }
 
-footer{
-	/*position*/
-
-
-	/*box-model*/
-	clear: both;
-	width: 100%;
-	height: 60px;
-	padding-top: 40px;
-
-	/*color*/
-	background: #666666;
-	/*text*/
-	text-align: center;
-
-	/*other*/
-
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
 }
 
+.wrapper:after {
+    content: "";
+    display: block;
+}
 
-/*order for CSS:*/
-
-	/*position*/
-	/*box-model*/
-	/*color*/
-	/*text*/
-	/*other*/
+footer, .wrapper:after {
+    height: 50px;
+}
