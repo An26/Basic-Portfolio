@@ -25,22 +25,22 @@ header {
     border-bottom: 2px solid #cccccc;
 }
 
-.nav-links {
+.nav {
     float:right;
     display: inline;
     margin-top: 20px;
     margin-right: 40px;
 }
 
-
-}
-.nav-links a{
-    text-align: center;
-    border-right: 1px solid #ddd;
-    color: #ccc;
-    margin-right: 20px;
+.nav-links a {
+    float: right;
+    margin-top: 20px;
+    margin-right:40px;
     text-decoration: none;
-
+    color: #666;
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right:1px solid #ccc;
 }
 
 .nav-links a:hover {
